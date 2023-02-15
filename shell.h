@@ -1,5 +1,5 @@
-#ifndef _SHELL_H_
-#define _SHELL_H_
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,20 +18,20 @@
 #define BUF_FLUSH -1
 
 /* for command chaining */
-#define CMD_NORM0
-#define CMD_OR1
-#define CMD_AND2
-#define CMD_CHAIN3
+#define CMD_NORM
+#define CMD_OR
+#define CMD_AND
+#define CMD_CHAIN
 
 /* for convert_number() */
-#define CONVERT_LOWERCASE1
-#define CONVERT_UNSIGNED2
+#define CONVERT_LOWERCASE
+#define CONVERT_UNSIGNED
 
 /* 1 if using system getline() */
 #define USE_GETLINE 0
 #define USE_STRTOK 0
 
-#define HIST_FILE".simple_shell_history"
+#define HIST_FILE ".simple_shell_history"
 #define HIST_MAX4096
 
 extern char **environ;
